@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("UI.Winforms.Authentication")> 
+<Assembly: AssemblyTitle("UI.Winforms.UserControl")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("UI.Winforms.Authentication")> 
+<Assembly: AssemblyProduct("UI.Winforms.UserControl")> 
 <Assembly: AssemblyCopyright("Copyright ©  2016")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("8f01420e-cce4-4c39-857b-6f7bfa3df397")> 
+<Assembly: Guid("ac16dd91-f8ce-4d5e-bba0-9554120b88c1")> 
 
 ' Version information for an assembly consists of the following four values:
 '

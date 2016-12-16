@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D26FB088-3318-4137-A30E-8DF223305FB1}</ProjectGuid>
+    <ProjectGuid>{F286E2C1-0D19-4964-9E6D-603C844BF105}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>UI.Winforms.Authentication</RootNamespace>
-    <AssemblyName>UI.Winforms.Authentication</AssemblyName>
+    <RootNamespace>UI.Winforms.Framework</RootNamespace>
+    <AssemblyName>UI.Winforms.Framework</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>UI.Winforms.Authentication.xml</DocumentationFile>
+    <DocumentationFile>UI.Winforms.Framework.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -27,7 +27,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>UI.Winforms.Authentication.xml</DocumentationFile>
+    <DocumentationFile>UI.Winforms.Framework.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

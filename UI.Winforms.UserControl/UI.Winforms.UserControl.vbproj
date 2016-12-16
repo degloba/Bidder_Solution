@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D26FB088-3318-4137-A30E-8DF223305FB1}</ProjectGuid>
+    <ProjectGuid>{6E6C04FB-CA5D-46E7-94D4-37FC02BA2BBC}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>UI.Winforms.Authentication</RootNamespace>
-    <AssemblyName>UI.Winforms.Authentication</AssemblyName>
+    <RootNamespace>UI.Winforms.UserControl</RootNamespace>
+    <AssemblyName>UI.Winforms.UserControl</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>UI.Winforms.Authentication.xml</DocumentationFile>
+    <DocumentationFile>UI.Winforms.UserControl.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -27,7 +27,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>UI.Winforms.Authentication.xml</DocumentationFile>
+    <DocumentationFile>UI.Winforms.UserControl.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -98,6 +98,28 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Bidder\Domain.MainBoundedContext.Modules.Bidder.vbproj">
+      <Project>{2681b52e-28ac-439a-b8a8-1eb86dca2025}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.dto\Domain.MainBoundedContext.Modules.dto.vbproj">
+      <Project>{7a9f59e4-6aef-4843-a255-be59fbb9cad6}</Project>
+      <Name>Domain.MainBoundedContext.Modules.dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Integration\Domain.MainBoundedContext.Modules.Integration.vbproj">
+      <Project>{25c4926b-002a-4635-b1d1-331be38f47d7}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.vbproj">
+      <Project>{1eda15d5-9fd0-4cf5-bdca-cbb0467857aa}</Project>
+      <Name>Domain.MainBoundedContext.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
+      <Project>{07e7ffb6-969c-4e7e-a137-84712b09d0b1}</Project>
+      <Name>Domain.MainBoundedContext</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
