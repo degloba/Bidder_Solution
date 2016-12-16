@@ -13,7 +13,6 @@ Public Interface IService1
 End Interface
 
 ' Use a data contract as illustrated in the sample below to add composite types to service operations.
-' You can add XSD files into the project. After building the project, you can directly use the data types defined there, with the namespace "WCFBidderService.ContractType".
 
 <DataContract()>
 Public Class CompositeType
