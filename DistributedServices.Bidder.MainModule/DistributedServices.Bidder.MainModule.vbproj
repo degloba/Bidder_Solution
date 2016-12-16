@@ -43,8 +43,53 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.4.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.4.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.4.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.2-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -89,6 +134,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -98,6 +144,45 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application.bidder\Application.bidder.vbproj">
+      <Project>{cf406ed9-6285-423b-ba2d-7bb49674a204}</Project>
+      <Name>Application.bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedServices.Bidder\DistributedServices.Bidder.vbproj">
+      <Project>{725465fd-f775-4890-982a-838a25e61522}</Project>
+      <Name>DistributedServices.Bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Bidder\Domain.MainBoundedContext.Modules.Bidder.vbproj">
+      <Project>{2681b52e-28ac-439a-b8a8-1eb86dca2025}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.dto\Domain.MainBoundedContext.Modules.dto.vbproj">
+      <Project>{7a9f59e4-6aef-4843-a255-be59fbb9cad6}</Project>
+      <Name>Domain.MainBoundedContext.Modules.dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Integration\Domain.MainBoundedContext.Modules.Integration.vbproj">
+      <Project>{25c4926b-002a-4635-b1d1-331be38f47d7}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.vbproj">
+      <Project>{1eda15d5-9fd0-4cf5-bdca-cbb0467857aa}</Project>
+      <Name>Domain.MainBoundedContext.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
+      <Project>{07e7ffb6-969c-4e7e-a137-84712b09d0b1}</Project>
+      <Name>Domain.MainBoundedContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext.Repositories\Infrastructure.Data.MainBoundedContext.Repositories.vbproj">
+      <Project>{d36fab96-9ec1-4a5b-950b-5dd46b54a723}</Project>
+      <Name>Infrastructure.Data.MainBoundedContext.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext.UnitOfWork\Infrastructure.Data.MainBoundedContext.UnitOfWork.vbproj">
+      <Project>{bac68064-2e2d-427e-ba8f-4f86fbe541d8}</Project>
+      <Name>Infrastructure.Data.MainBoundedContext.UnitOfWork</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
