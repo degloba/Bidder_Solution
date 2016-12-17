@@ -43,8 +43,18 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Swaksoft.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=f8a6cbf6057bc61f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Core.1.0.7.0\lib\net45\Swaksoft.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.5\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -79,6 +89,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MySQL\IBidderClasseRepository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -98,10 +109,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MySQL\" />
     <Folder Include="WS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.csproj">
+      <Project>{735884CF-A625-4761-AC2F-9B2B00A03DCD}</Project>
+      <Name>Domain.MainBoundedContext.Modules</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
