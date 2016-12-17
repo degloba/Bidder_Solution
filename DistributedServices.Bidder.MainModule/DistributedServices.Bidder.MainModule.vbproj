@@ -175,10 +175,6 @@
       <Project>{d36fab96-9ec1-4a5b-950b-5dd46b54a723}</Project>
       <Name>Infrastructure.Data.MainBoundedContext.Repositories</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Data.MainBoundedContext.UnitOfWork\Infrastructure.Data.MainBoundedContext.UnitOfWork.vbproj">
-      <Project>{bac68064-2e2d-427e-ba8f-4f86fbe541d8}</Project>
-      <Name>Infrastructure.Data.MainBoundedContext.UnitOfWork</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
