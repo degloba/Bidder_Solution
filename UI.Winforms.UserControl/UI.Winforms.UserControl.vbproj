@@ -89,6 +89,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -111,10 +112,6 @@
     <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Integration\Domain.MainBoundedContext.Modules.Integration.vbproj">
       <Project>{25c4926b-002a-4635-b1d1-331be38f47d7}</Project>
       <Name>Domain.MainBoundedContext.Modules.Integration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.vbproj">
-      <Project>{1eda15d5-9fd0-4cf5-bdca-cbb0467857aa}</Project>
-      <Name>Domain.MainBoundedContext.Modules</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
       <Project>{07e7ffb6-969c-4e7e-a137-84712b09d0b1}</Project>

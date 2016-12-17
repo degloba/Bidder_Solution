@@ -97,14 +97,14 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service1.svc" />
+    <Content Include="BidderService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Service1.svc.vb">
-      <DependentUpon>Service1.svc</DependentUpon>
+    <Compile Include="BidderService.svc.vb">
+      <DependentUpon>BidderService.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.vb" />
+    <Compile Include="IBidderService.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

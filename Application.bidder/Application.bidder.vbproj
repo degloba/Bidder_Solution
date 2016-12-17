@@ -43,13 +43,43 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidationNA, Version=1.2.16.24816, Culture=neutral, PublicKeyToken=0950390b87309e14, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidationNA.1.2.16\lib\net40\FluentValidationNA.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=f8a6cbf6057bc61f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Core.1.0.7.0\lib\net45\Swaksoft.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.2\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Infrastructure.Crosscutting, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Infrastructure.Crosscutting.1.0.6\lib\net45\Swaksoft.Infrastructure.Crosscutting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Linq.Dynamic, Version=1.1.13.21646, Culture=neutral, PublicKeyToken=b72be0322d1b32a8, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.Library.1.1.13\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -90,6 +120,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -99,6 +130,25 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Bidder\Domain.MainBoundedContext.Modules.Bidder.vbproj">
+      <Project>{2681b52e-28ac-439a-b8a8-1eb86dca2025}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.dto\Domain.MainBoundedContext.Modules.dto.vbproj">
+      <Project>{7a9f59e4-6aef-4843-a255-be59fbb9cad6}</Project>
+      <Name>Domain.MainBoundedContext.Modules.dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Integration\Domain.MainBoundedContext.Modules.Integration.vbproj">
+      <Project>{25c4926b-002a-4635-b1d1-331be38f47d7}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Integration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
+      <Project>{07e7ffb6-969c-4e7e-a137-84712b09d0b1}</Project>
+      <Name>Domain.MainBoundedContext</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

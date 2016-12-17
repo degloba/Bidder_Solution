@@ -51,9 +51,48 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidationNA, Version=1.2.16.24816, Culture=neutral, PublicKeyToken=0950390b87309e14, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidationNA.1.2.16\lib\net40\FluentValidationNA.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=f8a6cbf6057bc61f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Core.1.0.7.0\lib\net45\Swaksoft.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.5\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Infrastructure.Crosscutting, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Infrastructure.Crosscutting.1.0.6\lib\net45\Swaksoft.Infrastructure.Crosscutting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Infrastructure.Data.NHibernate.Seedwork, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Infrastructure.Data.NHibernate.Seedwork.1.0.4\lib\net45\Swaksoft.Infrastructure.Data.NHibernate.Seedwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Linq.Dynamic, Version=1.1.13.21646, Culture=neutral, PublicKeyToken=b72be0322d1b32a8, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.Library.1.1.13\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -88,6 +127,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MySql\BidderClasseRepository.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -111,7 +151,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MySql\" />
     <Folder Include="WS\" />
   </ItemGroup>
   <ItemGroup>
@@ -123,8 +162,8 @@
       <Project>{7a9f59e4-6aef-4843-a255-be59fbb9cad6}</Project>
       <Name>Domain.MainBoundedContext.Modules.dto</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.vbproj">
-      <Project>{1eda15d5-9fd0-4cf5-bdca-cbb0467857aa}</Project>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.csproj">
+      <Project>{735884CF-A625-4761-AC2F-9B2B00A03DCD}</Project>
       <Name>Domain.MainBoundedContext.Modules</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
