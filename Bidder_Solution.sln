@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data.MainBou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBBidderMigration", "DBBidderMigration\DBBidderMigration.csproj", "{BC486BC7-C853-4D31-83AB-0F9AED171AA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{B62596CA-7096-4CDB-9996-690B712FE32D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +147,10 @@ Global
 		{BC486BC7-C853-4D31-83AB-0F9AED171AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC486BC7-C853-4D31-83AB-0F9AED171AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC486BC7-C853-4D31-83AB-0F9AED171AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62596CA-7096-4CDB-9996-690B712FE32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62596CA-7096-4CDB-9996-690B712FE32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62596CA-7096-4CDB-9996-690B712FE32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62596CA-7096-4CDB-9996-690B712FE32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,5 +176,6 @@ Global
 		{735884CF-A625-4761-AC2F-9B2B00A03DCD} = {D146233F-4893-4B3B-9CFC-2C77E2EB0280}
 		{96FF6AC8-6137-46D8-96B9-BAC0ED7D3F46} = {FD282C96-661F-4B48-A177-8AFEEEDF5DA8}
 		{BC486BC7-C853-4D31-83AB-0F9AED171AA6} = {C1644BE7-3C8C-47CD-AB95-6B2A84E2446E}
+		{B62596CA-7096-4CDB-9996-690B712FE32D} = {021BF4C9-2968-4413-A384-4EB8857DC126}
 	EndGlobalSection
 EndGlobal
