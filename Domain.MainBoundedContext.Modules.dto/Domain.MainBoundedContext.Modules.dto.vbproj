@@ -99,6 +99,16 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Bidder\Domain.MainBoundedContext.Modules.Bidder.vbproj">
+      <Project>{2681b52e-28ac-439a-b8a8-1eb86dca2025}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Bidder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Integration\Domain.MainBoundedContext.Modules.Integration.vbproj">
+      <Project>{25c4926b-002a-4635-b1d1-331be38f47d7}</Project>
+      <Name>Domain.MainBoundedContext.Modules.Integration</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

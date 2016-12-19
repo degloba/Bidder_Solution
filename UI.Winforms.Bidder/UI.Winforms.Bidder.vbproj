@@ -46,10 +46,20 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Swaksoft.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=f8a6cbf6057bc61f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Core.1.0.7.0\lib\net45\Swaksoft.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.4\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -113,6 +123,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.MainBoundedContext.Modules.Bidder\Domain.MainBoundedContext.Modules.Bidder.vbproj">
@@ -130,6 +141,18 @@
     <ProjectReference Include="..\Domain.MainBoundedContext\Domain.MainBoundedContext.vbproj">
       <Project>{07e7ffb6-969c-4e7e-a137-84712b09d0b1}</Project>
       <Name>Domain.MainBoundedContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI.Winforms.Controller\UI.Winforms.Controller.vbproj">
+      <Project>{d45c401b-2f45-4d32-8653-aff8e8c35e0b}</Project>
+      <Name>UI.Winforms.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI.Winforms.Framework\UI.Winforms.Framework.vbproj">
+      <Project>{f286e2c1-0d19-4964-9e6d-603c844bf105}</Project>
+      <Name>UI.Winforms.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UI.Winforms.UserControl\UI.Winforms.UserControl.vbproj">
+      <Project>{6e6c04fb-ca5d-46e7-94d4-37fc02ba2bbc}</Project>
+      <Name>UI.Winforms.UserControl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
