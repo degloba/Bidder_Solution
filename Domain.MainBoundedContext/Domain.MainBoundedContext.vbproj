@@ -11,6 +11,7 @@
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Domain.MainBoundedContext.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +31,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Domain.MainBoundedContext.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -47,8 +50,8 @@
       <HintPath>..\packages\Swaksoft.Core.1.0.7.0\lib\net45\Swaksoft.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.5\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
+    <Reference Include="Swaksoft.Domain.Seedwork, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swaksoft.Domain.Seedwork.1.1.4\lib\net45\Swaksoft.Domain.Seedwork.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -60,7 +63,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -120,7 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.csproj">
-      <Project>{735884CF-A625-4761-AC2F-9B2B00A03DCD}</Project>
+      <Project>{735884cf-a625-4761-ac2f-9b2b00a03dcd}</Project>
       <Name>Domain.MainBoundedContext.Modules</Name>
     </ProjectReference>
   </ItemGroup>
