@@ -4,6 +4,11 @@ using Android.OS;
 
 using Android.Gms.Common;
 
+using Firebase.Messaging;
+using Firebase.Iid;
+using Android.Util;
+
+
 namespace AndroidBidder
 {
     [Activity(Label = "AndroidBidder", MainLauncher = true, Icon = "@drawable/icon")]
