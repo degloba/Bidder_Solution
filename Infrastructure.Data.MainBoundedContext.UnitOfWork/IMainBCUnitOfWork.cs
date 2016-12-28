@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data.MainBoundedContext.UnitOfWork
 {
-    public interface  IMainBCUnitOfWork 
+    public interface  IMainBCUnitOfWork: Infrastructure.Data.Seedwork.IQueryableUnitOfWork
     {
     }
 }

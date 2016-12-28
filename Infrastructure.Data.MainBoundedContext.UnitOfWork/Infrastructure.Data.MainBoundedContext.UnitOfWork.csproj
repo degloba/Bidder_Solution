@@ -92,6 +92,14 @@
       <Project>{735884cf-a625-4761-ac2f-9b2b00a03dcd}</Project>
       <Name>Domain.MainBoundedContext.Modules</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+      <Project>{A879519E-C11C-4D70-991A-E00D7786A812}</Project>
+      <Name>Domain.Seedwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj">
+      <Project>{93088ace-e6d9-4cf3-932e-066527c00675}</Project>
+      <Name>Infrastructure.Data.Seedwork</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
