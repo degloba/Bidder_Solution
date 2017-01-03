@@ -38,12 +38,20 @@ namespace AndroidBidder
             if (resultCode != ConnectionResult.Success)
             {
                 if (GoogleApiAvailability.Instance.IsUserResolvableError(resultCode))
-                    msgText.Text = GoogleApiAvailability.Instance.GetErrorString(resultCode);
-                else
-                {
-                    msgText.Text = "This device is not supported";
-                    Finish();
+                { 
+                                msgText.Text = GoogleApiAvailability.Instance.GetErrorString(resultCode);
+
+                    string A = GoogleApiAvailability.Instance.GetOpenSourceSoftwareLicenseInfo(this);
+                    GoogleApiAvailability.Instance.GetErrorDialog(this,resultCode,  1).Show();
+
+
                 }
+
+            else
+            {
+                msgText.Text = "This device is not supported";
+                Finish();
+            }
                 return false;
             }
             else
