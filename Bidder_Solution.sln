@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Seedwork", "Domain.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidBidder", "AndroidBidder\AndroidBidder.csproj", "{279530C3-BBE1-46DD-9C8E-621A6D30BF81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBidderService", "RBidderService\RBidderService.csproj", "{EADD4FA0-0B10-492A-9B28-CCC62CEA806F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -185,6 +187,10 @@ Global
 		{279530C3-BBE1-46DD-9C8E-621A6D30BF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{279530C3-BBE1-46DD-9C8E-621A6D30BF81}.Release|Any CPU.Build.0 = Release|Any CPU
 		{279530C3-BBE1-46DD-9C8E-621A6D30BF81}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EADD4FA0-0B10-492A-9B28-CCC62CEA806F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADD4FA0-0B10-492A-9B28-CCC62CEA806F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADD4FA0-0B10-492A-9B28-CCC62CEA806F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADD4FA0-0B10-492A-9B28-CCC62CEA806F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -216,5 +222,6 @@ Global
 		{93088ACE-E6D9-4CF3-932E-066527C00675} = {41B11CD4-59AD-481B-A3E9-C940E31F496B}
 		{A879519E-C11C-4D70-991A-E00D7786A812} = {41B11CD4-59AD-481B-A3E9-C940E31F496B}
 		{279530C3-BBE1-46DD-9C8E-621A6D30BF81} = {6E0454F0-6459-4E35-A09A-452FA67292E6}
+		{EADD4FA0-0B10-492A-9B28-CCC62CEA806F} = {021BF4C9-2968-4413-A384-4EB8857DC126}
 	EndGlobalSection
 EndGlobal
