@@ -96,6 +96,11 @@
     <Compile Include="MySQL\IBidderClasseRepository.vb" />
     <Compile Include="MySQL\IBidderClasseService.vb" />
     <Compile Include="MySQL\IEntityService.vb" />
+    <Compile Include="Users\IUserRepository.vb" />
+    <Compile Include="Users\IUserService.vb" />
+    <Compile Include="Users\UserService.vb" />
+    <Compile Include="WS\IWSService.vb" />
+    <Compile Include="WS\WSService.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -117,9 +122,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WS\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Domain.MainBoundedContext.Modules\Domain.MainBoundedContext.Modules.csproj">
       <Project>{735884cf-a625-4761-ac2f-9b2b00a03dcd}</Project>
