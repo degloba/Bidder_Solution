@@ -7,7 +7,7 @@
     <ProjectGuid>{A879519E-C11C-4D70-991A-E00D7786A812}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Domain.Seedwork</RootNamespace>
+    <RootNamespace>degloba.Domain.Seedwork</RootNamespace>
     <AssemblyName>Domain.Seedwork</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

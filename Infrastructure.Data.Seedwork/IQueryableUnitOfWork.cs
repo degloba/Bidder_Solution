@@ -1,4 +1,5 @@
-﻿using Domain.Seedwork;
+﻿using degloba.Domain.Seedwork;
+
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
