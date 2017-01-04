@@ -208,6 +208,9 @@ namespace AndroidBidder
 			// aapt resource value: 0x7f070008
 			public const int light = 2131165192;
 			
+			// aapt resource value: 0x7f07000b
+			public const int logTokenButton = 2131165195;
+			
 			// aapt resource value: 0x7f07000a
 			public const int msgText = 2131165194;
 			
@@ -216,6 +219,9 @@ namespace AndroidBidder
 			
 			// aapt resource value: 0x7f070004
 			public const int standard = 2131165188;
+			
+			// aapt resource value: 0x7f07000c
+			public const int subscribeButton = 2131165196;
 			
 			// aapt resource value: 0x7f070005
 			public const int wide = 2131165189;
